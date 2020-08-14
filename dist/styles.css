@@ -1,0 +1,43 @@
+body{
+
+background-color: teal;
+
+}
+
+h1 ,h2{
+
+    text-align: center;
+
+}
+.seccion{
+
+    
+    margin: auto;
+    width: 500px;
+
+
+}
+
+.formulario{
+
+
+border: 2px solid black;
+
+}
+
+label{
+font-weight: bold;
+font-size: 20px;
+}
+
+form , label{
+
+
+    text-align: center;
+}
+
+#boton{
+
+margin-bottom: 20px;
+
+}

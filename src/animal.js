@@ -1,5 +1,5 @@
 import persona from './persona'
-import datos from './datos'
+
 
 class animal extends persona
 {
@@ -16,13 +16,14 @@ class animal extends persona
     }
     mostrarInfo()
         {
-            return  document.getElementById("titulo").innerHTML= "Lista Pacientes",
-                    document.getElementById("l1").innerHTML=`Nombre : ${this.nombre}`,
-                    document.getElementById("l2").innerHTML=`Telefono :${this.telefono}`,
-                    document.getElementById("l3").innerHTML=`Direccion :${this.direccion}`,
-                    document.getElementById("l4").innerHTML=`Nombre Animal :${this.nombreAnimal}`,
-                    document.getElementById("l5").innerHTML=`Especie :${this.especie}`,
-                    document.getElementById("l6").innerHTML=`Enfermedad :${this.enfermedad}`
-         }
+        return  document.getElementById("lista").innerHTML+=`<h1>Lista Pacientes</h1>
+                                                            <p>Nombre : ${this.nombre}</p>
+                                                            <p> Telefono :${this.telefono}</p>
+                                                            <p> Direccion :${this.direccion}</p>
+                                                            <p> Nombre Animal :${this.nombreAnimal}</p>
+                                                            <p> Especie :${this.especie}</p>
+                                                            <p>Enfermedad :${this.enfermedad}</p>` 
+                   
+}
 }
 export default animal
